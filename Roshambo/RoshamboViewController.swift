@@ -11,20 +11,16 @@ import UIKit
 
 class RoshamboViewController: UIViewController
 {
-    
-    @IBOutlet weak var resultLabel:           UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var roshamboImageView: UIImageView!
-   
-    
-    var playerMove:  String!
+    var playerMove: String!
     var opponentMove:String!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
-    
-    
+
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(true)
@@ -85,7 +81,4 @@ class RoshamboViewController: UIViewController
     {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
-    
 }

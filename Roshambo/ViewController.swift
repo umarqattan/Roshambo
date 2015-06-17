@@ -8,11 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    
-    
-    
+class ViewController: UIViewController 
+{
     @IBAction func rockButton(sender: UIButton)
     {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("RoshamboViewController") as! RoshamboViewController
@@ -28,7 +25,6 @@ class ViewController: UIViewController {
         performSegueWithIdentifier("playRoshambo", sender: sender)
     }
     
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "playRoshambo"
         {
@@ -40,18 +36,8 @@ class ViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
-    
-    
-    
-   
-    
-    
-    
-
 }
-
